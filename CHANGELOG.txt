@@ -1,0 +1,6 @@
+Version 2:
+- Improved Code formatting
+- Replaced byte type with bool
+
+Version 1:
+- Initial working release
