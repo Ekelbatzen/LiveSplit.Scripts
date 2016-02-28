@@ -1,3 +1,6 @@
+Version 3:
+- Replaced init method with startup
+
 Version 2:
 - Improved Code formatting
 - Replaced byte type with bool

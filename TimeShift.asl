@@ -1,7 +1,7 @@
 /** 
  * TimeShift.asl - An ASL script for the auto-splitter of LiveSplit for the game TimeShift (v1.02)
  * @author  Ekelbatzen
- * @version 2 on February 19th 2016
+ * @version 3 on February 28th 2016
  */
   
 // Declare variables to watch via pointers and addresses in RAM
@@ -11,8 +11,8 @@ state("TimeShift") {
     bool     stateIsBossAlive  : 0xCC0444, 0x230, 0x208;
 }
 
-// Variables to declare when TimeShift process is found
-init {
+// Variables to declare on script start
+startup {
     vars.menuName = "menu.lg";
     vars.levelOneName = "ts2_city_part01.lg";
     vars.lastLevelName = "ts2_cityfinal_part01.lg";
