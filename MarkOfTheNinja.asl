@@ -6,7 +6,7 @@
  
 state("game") {
 	// 0 when loading, big number when done but not ingame, 65554 ingame
-    int loadingCode: 0x3AB5E4, 0x180, 0x18C, 0x160, 0x40;
+	int loadingCode: 0x3AB5E4, 0x180, 0x18C, 0x160, 0x40;
 	
 	// 2 ingame, 1 in menus, 5 in cutscenes and decision menu, 6 in style menu
 	int menucode: 0x3AB5DC, 0x88;
@@ -15,7 +15,7 @@ state("game") {
 }
 
 startup {
-    vars.levelnames = new string[]{"0_1", "1_1", "1_2", "1_3", "1_4", "2_1", "2_2", "2_3", "2_4", "3_1", "3_2", "4_1", "4_2"};
+	vars.levelnames = new string[]{"0_1", "1_1", "1_2", "1_3", "1_4", "2_1", "2_2", "2_3", "2_4", "3_1", "3_2", "4_1", "4_2"};
 	vars.startedEndlevel = false;
 }
 
@@ -40,5 +40,5 @@ split {
 
 // Returns True while game timer should be paused, False to continue
 isLoading {
-    return current.loadingCode == 0 || current.menucode == 1;
+	return current.loadingCode == 0 || current.menucode == 1;
 }
