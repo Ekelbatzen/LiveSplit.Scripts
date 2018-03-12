@@ -10,9 +10,9 @@ state("DragonAgeInquisition", "1.11")
 
 init
 {
-    if(modules.First().ModuleMemorySize == 81382864){
+    if(modules.First().ModuleMemorySize == 116293632){
         version = "1.01";
-    } else if (modules.First().ModuleMemorySize == 68040656){
+    } else if (modules.First().ModuleMemorySize == 103342080){
         version = "1.11";
     } else {
         //Unknown version, assuming 1.11
